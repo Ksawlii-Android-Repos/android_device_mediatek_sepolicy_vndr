@@ -1,8 +1,6 @@
 # Board specific SELinux policy variable definitions
 MTK_SEPOLICY_PATH := device/mediatek/sepolicy_vndr
 
-include device/lineage/sepolicy/libperfmgr/sepolicy.mk
-
 ifeq ($(BOARD_MTK_SEPOLICY_IS_LEGACY), true)
 # Build with broken namespaces
 # Userspace blobs are still dependent older props that
